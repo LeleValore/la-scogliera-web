@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dintorni - Amuri di Casa Scogliera</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+            <button type="button" class="hamburger" aria-label="Apri menu" aria-expanded="false" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="foto.html">Foto</a></li>
+                <li><a href="dintorni.html">Dintorni</a></li>
+                <li><a href="aiuti.html">Aiuti</a></li>
+                <li><a href="contatti.html" class="nav-cta">Prenota</a></li>
+            </ul>
+
+            <div class="language-switch notraslate" translate="no">
+                <span class="lang-label">ITA</span>
+                <label class="switch">
+                    <input type="checkbox" id="lang-toggle" onclick="toggleLanguage()">
+                    <span class="slider round"></span>
+                </label>
+                <span class="lang-label">ENG</span>
+            </div>
+
+            <div id="google_translate_element" style="display:none;"></div>
+        </nav>
+    </header>
+
+    <main style="max-width: 1200px; margin: 0 auto; padding: 40px;">
+        <div class="section-title" style="text-align: center; margin-bottom: 30px;">
+            <span class="subtitle">Esplora la Zona</span>
+            <h1>Cosa vedere vicino a noi</h1>
+            <div class="divider"></div>
+            <p>Punti di interesse, collegamenti per escursioni e strutture sanitarie da Via Scogliera 13.</p>
+        </div>
+
+        <div class="map-section" style="margin-bottom: 60px;">
+            <iframe width="100%" height="450"
+                style="border:0; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" loading="lazy"
+                allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.380424560731!2d15.122606876378453!3d37.52253302636599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313fcc771f28b21%3A0xc3f92d43e9974258!2sVia%20Scogliera%2C%2013%2C%2095021%20Aci%20Castello%20CT!5e0!3m2!1sit!2sit!4v1709144000000!5m2!1sit!2sit">
+            </iframe>
+        </div>
+
+        <div class="tourist-guide">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Piazza+Papa+Giovanni+XXIII+Catania"
+                    target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="attraction-card" style="border-top: 4px solid var(--accent-gold);">
+                        <h3>🌋 Piazza Giovanni XXIII (Alibus)</h3>
+                        <p>Punto di partenza per Alibus ed escursioni sull'Etna. Nodo centrale per i trasporti.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Ospedale+Azienda+Ospedaliera+per+l'Emergenza+Cannizzaro"
+                    target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="attraction-card">
+                        <h3>🏥 Ospedale Cannizzaro</h3>
+                        <p>A 600m. Eccellenza sanitaria raggiungibile in 5 minuti a piedi.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Centro+Catanese+di+Medicina+e+Chirurgia"
+                    target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="attraction-card">
+                        <h3>🔬 C.C. Medicina e Chirurgia</h3>
+                        <p>Struttura clinica rinomata situata nelle immediate vicinanze.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Castello+Normanno+Aci+Castello" target="_blank"
+                    style="text-decoration: none; color: inherit;">
+                    <div class="attraction-card">
+                        <h3>🏰 Aci Castello & Capo Mulini</h3>
+                        <p>Il castello normanno e i borghi marinari famosi per il pesce fresco.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Lungomare+di+Ognina+Catania" target="_blank"
+                    style="text-decoration: none; color: inherit;">
+                    <div class="attraction-card">
+                        <h3>🎡 Lungomare Ognina & Giostre</h3>
+                        <p>La passeggiata più amata dai catanesi, con vista sul porticciolo e aree svago.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Faraglioni+di+Acitrezza" target="_blank"
+                    style="text-decoration: none; color: inherit;">
+                    <div class="attraction-card">
+                        <h3>⛵ Acitrezza & Faraglioni</h3>
+                        <p>I mitici Faraglioni dei Ciclopi e l'atmosfera del borgo dei Malavoglia.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Le+Ciminiere+Catania" target="_blank"
+                    style="text-decoration: none; color: inherit;">
+                    <div class="attraction-card">
+                        <h3>🏢 Centro Fieristico Le Ciminiere</h3>
+                        <p>Polo fieristico e museale vicino alla stazione centrale di Catania.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Amuri di Casa Scogliera - Catania</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

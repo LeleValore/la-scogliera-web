@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto - Amuri di Casa Scogliera</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-viewer {
+            max-width: 900px;
+            margin: 50px auto;
+            position: relative;
+            text-align: center;
+            background: #000;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        #main-img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.7);
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 50%;
+            transition: 0.3s;
+            z-index: 5;
+        }
+
+        .nav-arrow:hover {
+            background: white;
+        }
+
+        .prev {
+            left: 20px;
+        }
+
+        .next {
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+            <button type="button" class="hamburger" aria-label="Apri menu" aria-expanded="false" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="foto.html">Foto</a></li>
+                <li><a href="dintorni.html">Dintorni</a></li>
+                <li><a href="aiuti.html">Aiuti</a></li>
+                <li><a href="contatti.html" class="nav-cta">Prenota</a></li>
+            </ul>
+
+            <div class="language-switch notraslate" translate="no">
+                <span class="lang-label">ITA</span>
+                <label class="switch">
+                    <input type="checkbox" id="lang-toggle" onclick="toggleLanguage()">
+                    <span class="slider round"></span>
+                </label>
+                <span class="lang-label">ENG</span>
+            </div>
+
+            <div id="google_translate_element" style="display:none;"></div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gallery-viewer">
+            <button class="nav-arrow prev" onclick="changeImage(-1)">&#10094;</button>
+            <img id="main-img" src="img/hero-mare.jpg" alt="Galleria">
+            <button class="nav-arrow next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+    </main>
+
+    <section class="video-container">
+        <h2 class="video-title">Video Tour</h2>
+        <div class="video-wrapper">
+            <video controls playsinline poster="img/hero-mare.jpg">
+                <source src="video/amuri-di-casa.mp4" type="video/mp4">
+                Il tuo browser non supporta il formato video.
+            </video>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Amuri di Casa Scogliera - Catania</p>
+    </footer>
+
+    <script>
+        const images = [
+            'img/esterni/ingresso1.webp',
+            'img/esterni/ingresso2.webp',
+            'img/esterni/ingresso3.webp',
+            'img/interni/soggiorno3.webp',
+            'img/interni/soggiorno4.webp',
+            'img/interni/saggiorno1.webp',
+            'img/interni/soggiorno2.webp',
+            'img/interni/cucina1.webp',
+            'img/interni/bagno1.webp',
+            'img/interni/bagno2.webp',
+            'img/interni/bagno3.webp',
+        ];
+
+        let currentIndex = 0;
+        function changeImage(direction) {
+            currentIndex += direction;
+            if (currentIndex >= images.length) currentIndex = 0;
+            if (currentIndex < 0) currentIndex = images.length - 1;
+            document.getElementById('main-img').src = images[currentIndex];
+        }
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiuti e Trasporti - Amuri di Casa Scogliera</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+            <button type="button" class="hamburger" aria-label="Apri menu" aria-expanded="false" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="foto.html">Foto</a></li>
+                <li><a href="dintorni.html">Dintorni</a></li>
+                <li><a href="aiuti.html">Aiuti</a></li>
+                <li><a href="contatti.html" class="nav-cta">Prenota</a></li>
+            </ul>
+
+            <div class="language-switch notraslate" translate="no">
+                <span class="lang-label">ITA</span>
+                <label class="switch">
+                    <input type="checkbox" id="lang-toggle" onclick="toggleLanguage()">
+                    <span class="slider round"></span>
+                </label>
+                <span class="lang-label">ENG</span>
+            </div>
+
+            <div id="google_translate_element" style="display:none;"></div>
+        </nav>
+    </header>
+
+    <main style="max-width: 1100px; margin: 0 auto; padding: 60px 20px;">
+        <div class="section-title" style="text-align: center; margin-bottom: 50px;">
+            <span class="subtitle">Guida Pratica</span>
+            <h1>Come raggiungerci e spostarsi</h1>
+            <div class="divider"></div>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>✈️ Dall'Aeroporto (Fontanarossa)</h3>
+                <p><strong>Alibus:</strong> È il modo più veloce. Prendi l'Alibus e scendi alla <strong>Stazione
+                        Centrale</strong>.</p>
+                <p><strong>Dalla Stazione:</strong> Prendi il bus linea <strong>935</strong> o <strong>534</strong> e
+                    scendi alla fermata "Scogliera" o "Cannizzaro".</p>
+                <p><strong>Taxi:</strong> Costo medio €30-35. Chiedi per "Via Scogliera 13, Cannizzaro".</p>
+            </div>
+
+            <div class="grid-item">
+                <h3>🚌 Linee Bus Strategiche</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li>📍 <strong>Linea 935:</strong> Collega direttamente la Scogliera con il centro (Piazza della
+                        Repubblica/Corso Sicilia).</li>
+                    <li>📍 <strong>Linea 534:</strong> Ideale per raggiungere Acitrezza e Aci Castello verso Nord.</li>
+                    <li>📍 <strong>Linea BRT1:</strong> Dalla Stazione per girare velocemente il centro storico.</li>
+                </ul>
+            </div>
+
+            <div class="grid-item">
+                <h3>🚗 In Auto</h3>
+                <p>Prendi l'uscita autostradale <strong>Catania Centro / San Gregorio</strong>.</p>
+                <p>Segui le indicazioni per "Scogliera" o "Ospedale Cannizzaro". Via Scogliera 13 si trova sulla
+                    litoranea che collega Catania ad Aci Castello.</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.332304892465!2d15.127818776472477!3d37.523616672049444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313fc6932450849%3A0x633d9c18406f0e21!2sVia%20Scogliera%2C%2013%2C%2095021%20Catania%20CT!5e0!3m2!1sit!2sit!4v1709310000000!5m2!1sit!2sit"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Amuri di Casa Scogliera - Via Scogliera 13, Catania</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servizi - Amuri di Casa Scogliera</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="nav-container">
+            <button type="button" class="hamburger" aria-label="Apri menu" aria-expanded="false" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="foto.html">Foto</a></li>
+                <li><a href="dintorni.html">Dintorni</a></li>
+                <li><a href="aiuti.html">Aiuti</a></li>
+                <li><a href="contatti.html" class="nav-cta">Prenota</a></li>
+            </ul>
+
+            <div class="language-switch notraslate" translate="no">
+                <span class="lang-label">ITA</span>
+                <label class="switch">
+                    <input type="checkbox" id="lang-toggle" onclick="toggleLanguage()">
+                    <span class="slider round"></span>
+                </label>
+                <span class="lang-label">ENG</span>
+            </div>
+
+            <div id="google_translate_element" style="display:none;"></div>
+        </nav>
+    </header>
+
+    <main class="full-description">
+        <div class="description-content">
+            <div class="section-title">
+                <span class="subtitle">Comfort e Sicurezza</span>
+                <h1>I Nostri Servizi</h1>
+                <div class="divider"></div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item" style="border-top-color: var(--accent-gold);">
+                    <h3>🏥 Salute & Logistica</h3>
+                    <ul>
+                        <li>✅ <strong>Ospedale Cannizzaro</strong> a 2 minuti</li>
+                        <li>✅ Vicinanza al Centro Catanese di Oncologia</li>
+                        <li>✅ Ideale per degenti e familiari</li>
+                        <li>✅ Farmacie raggiungibili a piedi</li>
+                        <li>✅ Facilità di parcheggio h24</li>
+                    </ul>
+                </div>
+
+                <div class="grid-item">
+                    <h3>🏠 Comfort Casa</h3>
+                    <ul>
+                        <li>🔹 Climatizzazione totale (A/C)</li>
+                        <li>🔹 Wi-Fi Fibra Alta Velocità</li>
+                        <li>🔹 2 Smart TV (Netflix/YouTube)</li>
+                        <li>🔹 Lavatrice e kit stiro</li>
+                        <li>🔹 4 Posti letto disponibili</li>
+                        <li>🔹 Terrazzino Relax attrezzato</li>
+                        <li>🔹 (Su richiesta) Lettino da campeggio</li>
+                        <li>🔹 (Su richiesta) Seggiolone</li>
+                    </ul>
+                </div>
+
+                <div class="grid-item">
+                    <h3>🍳 Cucina Attrezzata</h3>
+                    <ul>
+                        <li>🔹 Piano cottura a induzione</li>
+                        <li>🔹 Macchina caffè con cialde</li>
+                        <li>🔹 Forno, microonde e bollitore</li>
+                        <li>🔹 Set stoviglie completo</li>
+                    </ul>
+                </div>
+
+                <div class="grid-item">
+                    <h3>🌊 Tempo Libero</h3>
+                    <ul>
+                        <li>🔹 Solarium e mare a pochi metri</li>
+                        <li>🔹 Pista ciclabile e running</li>
+                        <li>🔹 Ristoranti di pesce e pizzerie</li>
+                        <li>🔹 Bus per Catania centro vicinissimo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Amuri di Casa Scogliera - Catania</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amuri di Casa Scogliera - Catania</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="home-bg">
+        <header class="site-header">
+            <nav class="nav-container">
+                <button type="button" class="hamburger" aria-label="Apri menu" aria-expanded="false"
+                    onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="foto.html">Foto</a></li>
+                    <li><a href="dintorni.html">Dintorni</a></li>
+                    <li><a href="aiuti.html">Aiuti</a></li>
+                    <li><a href="contatti.html" class="nav-cta">Prenota</a></li>
+                </ul>
+
+                <div class="language-switch notraslate" translate="no">
+                    <span class="lang-label">ITA</span>
+                    <label class="switch">
+                        <input type="checkbox" id="lang-toggle" onclick="toggleLanguage()">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="lang-label">ENG</span>
+                </div>
+
+                <div id="google_translate_element" style="display:none;"></div>
+            </nav>
+        </header>
+
+        <div class="hero-text">
+            <span class="hero-tag">Cannizzaro, Catania</span>
+            <h1>Amuri di Casa Scogliera</h1>
+            <p>Il calore di una casa, il respiro del mare.</p>
+        </div>
+    </div>
+
+    <section class="full-description">
+        <div class="description-content">
+            <div class="section-title">
+                <span class="subtitle">Welcome to</span>
+                <h2>Amuri di Casa Scogliera</h2>
+                <div class="divider"></div>
+            </div>
+
+            <p class="lead-text">
+                Immersa nel fascino della <strong>roccia lavica</strong> e situata in una posizione strategica a
+                Cannizzaro, la nostra casa è il rifugio perfetto per chi cerca relax, mare e comodità logistica.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="card-image-placeholder">🏠</div>
+                    <div class="card-info">
+                        <h3>Accoglienza</h3>
+                        <p>Un ambiente curato nei minimi dettagli per farti sentire a casa fin dal primo momento.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-image-placeholder">🌊</div>
+                    <div class="card-info">
+                        <h3>Mare & Sole</h3>
+                        <p>Accesso immediato ai solarium della Scogliera e alla pista ciclabile fronte mare.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-image-placeholder">🏥</div>
+                    <div class="card-info">
+                        <h3>Punto Strategico</h3>
+                        <p>Situata a pochissimi passi dall'<strong>Ospedale Cannizzaro</strong> e dai principali
+                            servizi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Amuri di Casa Scogliera - Catania</p>
+        <p>Via Nazionale (Cannizzaro), Catania</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenota - Amuri di Casa Scogliera</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="nav-container">
+            <button type="button" class="hamburger" aria-label="Apri menu" aria-expanded="false" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="foto.html">Foto</a></li>
+                <li><a href="dintorni.html">Dintorni</a></li>
+                <li><a href="aiuti.html">Aiuti</a></li>
+                <li><a href="contatti.html" class="nav-cta">Prenota</a></li>
+            </ul>
+
+            <div class="language-switch notraslate" translate="no">
+                <span class="lang-label">ITA</span>
+                <label class="switch">
+                    <input type="checkbox" id="lang-toggle" onclick="toggleLanguage()">
+                    <span class="slider round"></span>
+                </label>
+                <span class="lang-label">ENG</span>
+            </div>
+
+            <div id="google_translate_element" style="display:none;"></div>
+        </nav>
+    </header>
+
+    <main class="booking-page">
+        <div class="booking-header" style="text-align: center; padding: 40px 20px;">
+            <h2>Prenota il tuo soggiorno</h2>
+            <p>Scegli la tua piattaforma preferita per disponibilità e prezzi.</p>
+        </div>
+
+        <div class="booking-container">
+            <a href="https://www.subito.it/case-vacanza/casa-vacanza-a-cannizzaro-scogliera-catania-636745253.htm"
+                class="btn-booking subito" target="_blank">
+                <span class="logo-s">S</span>
+                <div class="btn-text"><span>Vedi su</span><strong>Subito.it</strong></div>
+            </a>
+
+            <a href="https://share.google/9N5dFF8wCfRVHGOCI" class="btn-booking airbnb" target="_blank">
+                <i class="fab fa-airbnb"></i>
+                <div class="btn-text"><span>Prenota su</span><strong>Airbnb</strong></div>
+            </a>
+
+            <a href="https://www.booking.com/Share-WO0ZqE" class="btn-booking booking" target="_blank">
+                <span class="logo-b">B.</span>
+                <div class="btn-text"><span>Prenota su</span><strong>Booking.com</strong></div>
+            </a>
+
+            <div class="info-box"
+                style="margin-top: 40px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <h3 style="color: var(--primary-blue); margin-bottom: 20px;">I Nostri Recapiti</h3>
+                <div class="info-item" style="margin-bottom: 10px;">📍 Via della Scogliera 13, Catania</div>
+                <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+                <div class="info-item">📞 +39 3389144205</div>
+                <div class="info-item">👩🏻 <strong>Stefania Caccamo</strong></div>
+                <div class="info-item" style="font-size: 0.9rem; color: #666;">📧 stefaniacaccamo64@gmail.com</div>
+                <br>
+                <div class="info-item">📞 +39 3426696464</div>
+                <div class="info-item">👦🏻 <strong>Federico Lionti</strong></div>
+                <div class="info-item" style="font-size: 0.9rem; color: #666;">📧 lionti.federico@gmail.com</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Amuri di Casa Scogliera - Scogliera di Catania</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

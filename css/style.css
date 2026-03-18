@@ -73,17 +73,23 @@ nav a:hover {
 .hamburger {
     display: none;
     /* solo su desktop rimane nascosto */
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 22px;
+    align-items: center;
+    gap: 10px;
     background: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
 }
 
-.hamburger span {
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+}
+
+.hamburger-icon span {
     display: block;
     height: 3px;
     background: var(--white);
@@ -91,15 +97,25 @@ nav a:hover {
     transition: transform .3s, opacity .3s;
 }
 
-.hamburger.open span:nth-child(1) {
+.hamburger-label {
+    color: var(--white);
+    font-family: 'Lora', serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.hamburger.open .hamburger-icon span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
 }
 
-.hamburger.open span:nth-child(2) {
+.hamburger.open .hamburger-icon span:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger.open span:nth-child(3) {
+.hamburger.open .hamburger-icon span:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
 }
 

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# IMPORTANTE: sostituisci TUO-DOMINIO.IT con il dominio reale
+Sitemap: https://www.amuridicasa-scogliera.it

@@ -4,7 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foto - Amuri di Casa Scogliera</title>
+    <title>Foto Casa Vacanza Cannizzaro Catania | Amuri di Casa Scogliera</title>
+    <meta name="description"
+        content="Guarda foto e video di Amuri di Casa Scogliera, casa vacanza a Cannizzaro vicino Ospedale Cannizzaro e mare della Scogliera di Catania.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="/foto.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:title" content="Foto Casa Vacanza Cannizzaro Catania">
+    <meta property="og:description"
+        content="Galleria fotografica e video tour della casa vacanza in Via della Scogliera 13, Catania.">
+    <meta property="og:image" content="img/hero-mare.jpg">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="css/style.css">
     <style>
         main {
@@ -128,9 +139,13 @@
     </header>
 
     <main>
+        <div class="section-title" style="text-align: center; margin-top: 20px;">
+            <h1>Foto della Casa Vacanza a Cannizzaro</h1>
+            <div class="divider"></div>
+        </div>
         <div class="gallery-viewer">
             <button class="nav-arrow prev" onclick="changeImage(-1)">&#10094;</button>
-            <img id="main-img" src="img/hero-mare.jpg" alt="Galleria">
+            <img id="main-img" src="img/esterni/ingresso1.webp" alt="Ingresso della casa vacanza a Cannizzaro">
             <button class="nav-arrow next" onclick="changeImage(1)">&#10095;</button>
         </div>
     </main>
@@ -165,12 +180,29 @@
             'img/interni/bagno3.webp',
         ];
 
+        const imageAlts = [
+            'Ingresso esterno della casa vacanza a Cannizzaro',
+            'Dettaglio ingresso esterno nella zona Scogliera',
+            'Seconda vista dell ingresso della struttura',
+            'Soggiorno interno luminoso con area relax',
+            'Zona living della casa vacanza a Catania',
+            'Soggiorno con arredi e comfort principali',
+            'Panoramica del soggiorno con TV e divano',
+            'Camera da letto matrimoniale della struttura',
+            'Cucina attrezzata per soggiorni brevi e lunghi',
+            'Bagno principale della casa vacanza',
+            'Dettaglio bagno con servizi completi',
+            'Secondo dettaglio del bagno interno'
+        ];
+
         let currentIndex = 0;
         function changeImage(direction) {
             currentIndex += direction;
             if (currentIndex >= images.length) currentIndex = 0;
             if (currentIndex < 0) currentIndex = images.length - 1;
-            document.getElementById('main-img').src = images[currentIndex];
+            const mainImg = document.getElementById('main-img');
+            mainImg.src = images[currentIndex];
+            mainImg.alt = imageAlts[currentIndex];
         }
     </script>
 
